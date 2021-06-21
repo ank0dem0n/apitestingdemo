@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-21T22:32:56.235Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10008300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefination.hooks.beforescenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "verify if place is being succesfully added by addplace api",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-being-succesfully-added-by-addplace-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6939956100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "add_place payload \"abc\" \"english\" \"67 side layout, cohen 09\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 19
+                },
+                {
+                  "val": "english",
+                  "offset": 25
+                },
+                {
+                  "val": "67 side layout, cohen 09",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefination.place_validation.addplace_payload(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2861365400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call \"add_placeApi\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "add_placeApi",
+                  "offset": 11
+                },
+                {
+                  "val": "post",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefination.place_validation.user_call_something_with_something_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7004700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "then api call got success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefination.place_validation.then_api_call_got_success_with_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1032685500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefination.place_validation.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22014700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 1
+                },
+                {
+                  "val": "APP",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefination.place_validation.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2170694700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify place id created maps to \"abc\" and \"get_placeApi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 33
+                },
+                {
+                  "val": "get_placeApi",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefination.place_validation.verify_place_id_created_maps_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Deleteplaceapi"
+          }
+        ]
+      }
+    ],
+    "name": "validating place api",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidation.feature",
+    "tags": []
+  }
+]
